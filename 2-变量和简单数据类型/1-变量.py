@@ -1,9 +1,12 @@
 # 直接打印一段字符串
 print('直接打印一段字符串')
 
-# 使用变量关联一段字符串
-message = '使用变量关联一段字符串'
-# 打印变量，即打印这个变量关联的值
+# 使用变量message，赋值一段话
+message = 'Hello World!'
+# 打印变量，即打印这个变量的值
+print(message)
+#在程序中可随时修改变量的值，而Python将始终记录变量的最新值。
+message = '修改变量message的值'
 print(message)
 
 """
