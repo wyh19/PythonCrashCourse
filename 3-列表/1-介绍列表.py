@@ -34,3 +34,8 @@ motorcycles = ['honda', 'yamaha', 'suzuki']
 popped_motorcycle = motorcycles.pop(1)
 print(motorcycles) # ['honda', 'suzuki']
 print(popped_motorcycle) # yamaha
+
+# 根据值删除元素,使用remove函数，该函数只删除第一次匹配的值，如果需要删除全部符合的值，需要使用遍历
+motorcycles = ['honda', 'yamaha', 'suzuki'] 
+motorcycles.remove('yamaha') 
+print(motorcycles) #['honda', 'suzuki']
