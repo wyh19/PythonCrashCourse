@@ -17,3 +17,6 @@ age = 30
 not age > 20  # not True,结果为False
 print(not age > 20)  # False
 not age < 20  # not False ,结果为True
+
+# 优先级
+print(not age > 20 or age == 30)
