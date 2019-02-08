@@ -12,3 +12,34 @@ print('---演示省略开始索引---')
 print(players[:3])
 print('---演示省略结尾索引---')
 print(players[1:])
+
+# 遍历切片，和遍历列表是一样的
+print('---打印前3名---')
+for name in players[:3]:
+    print(name)
+
+# players列表赋值给其他变量，比如下面演示的a_players
+a_players = players
+print('---打印a_players---')
+print(a_players)
+#修改变量a_Players
+a_players[0] = 'wyh'
+# 查看列表的值
+print('---修改后，打印a_players--')
+print(a_players)
+print('---打印原本--')
+print(players)
+print('---结论：原本受变量a_players改变的影响，因为两者指向同一个列表---')
+
+
+# 使用切片赋值列表,即同时省略开头和结尾，得到一个完全相同的副本
+copy_players = players[:]
+print('---打印副本---')
+print(copy_players)
+#修改副本
+copy_players[0] = 'wyh'
+print('---修改后，打印副本--')
+print(copy_players)
+print('---打印原本--')
+print(players)
+print('---结论：原本不会受副本的影响，两者是各自独立的列表---')
