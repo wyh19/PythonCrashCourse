@@ -5,8 +5,9 @@ print(bicycles)  # 打印结果包含方括号
 # 访问列表元素，即索引，第一项索引为0，依次增加
 print(bicycles[0])  # trek
 print(bicycles[2].title())  # Redline
-# 最后一项的索引为 -1
+# 最后一项的索引为 -1,往前依次是-2，-3，-n
 print(bicycles[-1].upper())  # SPECIALIZED
+print(bicycles[-3].upper())  # CANNONDALE
 
 # 修改、添加和删除元素，注意这些操作会改变列表的元素，因此每次演示新的例子，都重新给变量赋值初始的列表
 motorcycles = ['honda', 'yamaha', 'suzuki']
