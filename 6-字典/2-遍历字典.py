@@ -16,6 +16,10 @@ print(user_0.keys())
 # 遍历字典中所有的键
 for key in user_0.keys():
     print(key.upper())
+# 对key值排序
+print('---对key值排序---')
+for key in sorted(user_0.keys()):
+    print(key.upper())
 
 # 通过values获得value列表
 print('---通过values获得value列表---')
