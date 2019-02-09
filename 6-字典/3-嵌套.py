@@ -36,6 +36,7 @@ for alien in aliens[0:5]:
     print(alien)
 
 # 字典中存储列表
+print('\n---演示字典中存储列表---')
 favorite_languages = {
     'jen': ['python', 'ruby'],
     'sarah': ['c'],
@@ -45,6 +46,27 @@ favorite_languages = {
 # 遍历字典
 for name, languages in favorite_languages.items():
     print("\n" + name.title() + "'s favorite languages are:")
-    #遍历列表
+    # 遍历列表
     for language in languages:
         print("\t" + language.title())
+
+# 字典中存储字典
+print('\n---演示字典中存储字典---')
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton'
+    },
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris'
+    }
+}
+for username, user_info in users.items():
+    print("\nUsername: " + username)
+    full_name = user_info['first'] + " " + user_info['last']
+    location = user_info['location']
+    print("\tFull name: " + full_name.title())
+    print("\tLocation: " + location.title())
