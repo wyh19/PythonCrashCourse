@@ -34,3 +34,17 @@ for alien in aliens[0:3]:
 # 显示前五个外星人
 for alien in aliens[0:5]:
     print(alien)
+
+# 字典中存储列表
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell']
+}
+# 遍历字典
+for name, languages in favorite_languages.items():
+    print("\n" + name.title() + "'s favorite languages are:")
+    #遍历列表
+    for language in languages:
+        print("\t" + language.title())
