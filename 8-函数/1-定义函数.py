@@ -47,12 +47,18 @@ print('\n---关键字传参---')
 describe_pet(pet_name='harry', animal_type='hamster')
 
 # 参数默认值，即在定义函数时，给某些参数指定默认值，在调用函数时，当不给这些含有默认值的参数传参时，它们使用各自的默认值作为参数
+
+
 def describe_pet2(pet_name, animal_type='dog'):
     """显示宠物的信息"""
     print("I have a " + animal_type + ".")
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
+
+# 可以灵活的混合使用默认参数、关键字传参
 print('\n---使用默认值---')
 describe_pet2('旺财')
+describe_pet2(pet_name='旺财')
 print('\n---覆盖默认值---')
-describe_pet2('喵喵','cat')
+describe_pet2('喵喵', 'cat')
+describe_pet2('喵喵', animal_type='cat')
